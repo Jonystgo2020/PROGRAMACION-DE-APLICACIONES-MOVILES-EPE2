@@ -1,0 +1,27 @@
+body {
+    background-color: #d5ecd9;
+}
+
+input:focus {
+    background-color: #bbc6ce;
+    color: rgb(40, 45, 49);
+}
+
+textarea:focus {
+    background-color: #bbc6ce;
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+img {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portal Dirección</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <h1 class="display-4 shadow-sm p-3">Portal Dirección
+            </h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            inscripcion de estudiantes y asigancion de nivel
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show btn-outline-success" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p> No se encontro en la DB tablo o algo similar para registrar atenciones de apoderados.
+                            </p>
+                            <h6 class="display-5">Registro Estudiante</h6>
+                            <hr>
+
+                            <!-- Formulario para ingreso de alumnos en tabla persona(?) -->
+                            <form class="p-3 col-5" id="nuevoAlumno">
+                                <div class="mb-4">
+                                    <label for="rutApoderado" class="form-label">Nombres</label>
+                                    <input type="text" class="form-control" id="nombres">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="rutAlumno" class="form-label">Apellido 1</label>
+                                    <input type="text" class="form-control" id="apellido1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="rutAlumno" class="form-label">Apellido 2</label>
+                                    <input type="text" class="form-control" id="Apeliido2">
+                                </div>
+                                <div class="p-2">
+                                    <div class="input-group date" data-provide="datepicker">
+                                        <label for="fechaNac" class="form-label">Fecha Nacimiento: </label>
+                                        <br>
+                                        <input type="date" id="fechaNac">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="direccion" class="form-label">Direccion</label>
+                                    <input type="text" class="form-control" id="direccion">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telContac" class="form-label">Telefono Contacto</label>
+                                    <input type="text" class="form-control" id="telContac">
+                                </div>
+                                <!-- se envia el cargo como alumnos -->
+                                <input type="hidden" id="cargo" value="alumno">
+                                <hr>
+                                <button type="button" class="btn btn-primary" id="ingresarAlumno">Ingresar Alumno</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            informacion masiva de la sede
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse btn-outline-success" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>plataforma en matencion</strong> dado a problemas con los formularios se mantiene en mantencion
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            registro de visitas / reuniones de apoderados
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse btn-outline-success" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>plataforma en matencion</strong> dado a problemas con los formularios se mantiene en mantencion
+                       
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            informacion por nivel e Historial
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse btn-outline-success" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>plataforma en matencion</strong> dado a problemas con los formularios se mantiene en mantencion
+                       
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed btn-outline-success " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Historial de por estudiantes
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse btn-outline-success" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <form action="">
+                                <select class="form-select" id="seleccionParvularia" aria-label="Default select example">
+                                    <option selected>Seleccion estudiante</option>
+                                    <option value="1">ana lopez</option>
+                                    <option value="2">jose antonio</option>
+                                    <option value="3">raul peralta</option>
+                                </select>
+                                <hr>
+                                <button type="button" class="btn btn-outline-primary" id="buscarNivel">Buscar</button>
+                            </form>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+</html>
